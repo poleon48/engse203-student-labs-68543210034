@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+export default function AppHeader() {
+  return (
+    <header className="app-header">
+      <div className="container">
+        <p className="eyebrow">ENGSE203 • LAB 4</p>
+        <h1>Campus Service Request</h1>
+        <p>React Component-based Application</p>
+      </div>
+    </header>
+  );
+}
+=======
 function AppHeader({ title, subtitle}) {
   return (
     <header className="hero">
@@ -11,3 +24,4 @@ function AppHeader({ title, subtitle}) {
 }
 
 export default AppHeader;
+>>>>>>> main

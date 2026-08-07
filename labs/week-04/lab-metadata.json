@@ -1,8 +1,12 @@
 {
   "week": "week-04",
-  "status": "ready",
+  "title": "React Components and State",
+  "status": "submitted",
+  "sourceOrigin": "course-starter",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/1",
+  "submissionTag": "lab-04-submission-v1",
   "testStatus": "pass",
-  "sourceOrigin": "migrated-repository",
-  "originalRepoUrl": "https://github.com/poleon48/engse203-student-labs-68543210034",
-  "originalCommit": "02275b16"
+  "notes": ""
 }

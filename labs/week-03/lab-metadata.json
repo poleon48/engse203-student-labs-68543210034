@@ -1,12 +1,12 @@
 {
   "week": "week-03",
   "title": "Responsive Web UI & Form Interaction",
-  "status": "draft",
+  "status": "submitted",
   "sourceOrigin": "course-starter",
   "originalRepoUrl": "",
   "originalCommit": "",
-  "pullRequestUrl": "",
-  "submissionTag": "",
+  "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/1",
+  "submissionTag": "lab-03-submission-v1",
   "testStatus": "not-tested",
-  "notes": "Static site ต้องมี index.html ที่ publish root"
+  "notes": ""
 }

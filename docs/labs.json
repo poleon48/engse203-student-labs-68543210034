@@ -2,18 +2,18 @@
   {
     "week": "week-01",
     "title": "Developer Environment & GitHub Repository Setup",
-    "status": "draft",
-    "sourceOrigin": "course-starter",
-    "originalRepoUrl": "",
-    "originalCommit": "",
+    "status": "ready",
+    "sourceOrigin": "migrated-repository",
+    "originalRepoUrl": "https://github.com/<poleon48>/<old-lab01-repo>",
+    "originalCommit": "abc1234",
     "pullRequestUrl": "",
-    "submissionTag": "",
-    "testStatus": "not-tested",
-    "notes": "LAB 1 ใช้ evidence report ได้โดยไม่ต้องมี web application",
+    "submissionTag": "lab-01-submission-v1",
+    "testStatus": "pass",
+    "notes": "รัน hello.js และตรวจ environment แล้ว",
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-01/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/lab/week-01/labs/week-01/source",
     "hasPublish": false,
-    "sourceEntries": 0
+    "sourceEntries": 4
   },
   {
     "week": "week-02",
@@ -44,6 +44,7 @@
     "notes": "Static site ต้องมี index.html ที่ publish root",
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-03/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/lab/week-03/labs/week-03/source",
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     "hasPublish": false,
     "sourceEntries": 0
@@ -51,6 +52,10 @@
     "hasPublish": true,
     "sourceEntries": 8
 >>>>>>> Stashed changes
+=======
+    "hasPublish": true,
+    "sourceEntries": 7
+>>>>>>> main
   },
   {
     "week": "week-04",
@@ -63,10 +68,14 @@
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/lab/week-04/labs/week-04/source",
 <<<<<<< Updated upstream
     "hasPublish": false,
+<<<<<<< HEAD
     "sourceEntries": 0
 =======
     "hasPublish": true,
     "sourceEntries": 12
 >>>>>>> Stashed changes
+=======
+    "sourceEntries": 12
+>>>>>>> main
   }
 ]

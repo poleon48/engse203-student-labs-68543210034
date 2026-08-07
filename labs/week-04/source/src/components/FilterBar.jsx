@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 export default function FilterBar({ currentFilter, onFilterChange }) {
   const filters = [
     { key: 'all', label: 'ทั้งหมด' },
@@ -25,7 +25,7 @@ export default function FilterBar({ currentFilter, onFilterChange }) {
     </div>
   );
 }
-=======
+
 const filters = [
   ['all', 'ทั้งหมด'],
   ['todo', 'ต้องทำ'],
@@ -52,4 +52,4 @@ function FilterBar({ value, onFilterChange }) {
 }
 
 export default FilterBar;
->>>>>>> main
+

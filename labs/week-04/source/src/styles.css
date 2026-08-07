@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 :root {
   --primary: #1d4ed8;
   --primary-hover: #1e40af;
@@ -229,7 +229,7 @@ input, select, textarea {
   padding: 2rem;
   color: var(--text-muted);
 }
-=======
+
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
@@ -301,4 +301,4 @@ form > button, .filter-active { border: 0; border-radius: .65rem; padding: .72re
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
->>>>>>> main
+

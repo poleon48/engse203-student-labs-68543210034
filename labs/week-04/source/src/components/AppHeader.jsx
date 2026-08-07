@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export default function AppHeader() {
   return (
     <header className="app-header">
@@ -10,7 +9,6 @@ export default function AppHeader() {
     </header>
   );
 }
-=======
 function AppHeader({ title, subtitle}) {
   return (
     <header className="hero">
@@ -24,4 +22,4 @@ function AppHeader({ title, subtitle}) {
 }
 
 export default AppHeader;
->>>>>>> main
+

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-<<<<<<< HEAD
 import AppHeader from './components/AppHeader';
 import SummaryPanel from './components/SummaryPanel';
 import RequestForm from './components/RequestForm';
@@ -43,7 +42,7 @@ export default function App() {
     </div>
   );
 }
-=======
+
 import AppHeader from './components/AppHeader.jsx';
 import SummaryPanel from './components/SummaryPanel.jsx';
 import TaskForm from './components/TaskForm.jsx';
@@ -88,4 +87,4 @@ function App() {
 }
 
 export default App;
->>>>>>> main
+

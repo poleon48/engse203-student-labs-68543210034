@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 export default function SummaryPanel({ requests }) {
   const total = requests.length;
   const pending = requests.filter(r => r.status === 'pending').length;
@@ -34,7 +34,7 @@ export default function SummaryPanel({ requests }) {
     </section>
   );
 }
-=======
+
 const summaryItems = [
   ['total', 'ทั้งหมด'],
   ['todo', 'ต้องทำ'],
@@ -56,4 +56,4 @@ function SummaryPanel({ summary }) {
 }
 
 export default SummaryPanel;
->>>>>>> main
+

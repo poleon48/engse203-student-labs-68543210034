@@ -119,8 +119,16 @@ function DashboardPage() {
               value={searchText} 
               onChange={(e) => setSearchText(e.target.value)} 
             />
+            {filteredRequests.length === 0 ? (
+              <p style={{ textAlign: 'center', padding: '2rem', color: '#666' }}>
+                ไม่พบคำร้องที่ตรงกับการค้นหา
+              </p>
+            ) : (
+              <>
             {/* TODO B3: ส่ง onAcknowledge={handleAcknowledge} ให้ RequestList เพื่อให้การ์ด pending มีปุ่ม "รับเรื่อง" */}
             <RequestList requests={filteredRequests} onDeleteRequest={handleDelete} />
+            </>
+            )}
           </section>
         </>
       )}

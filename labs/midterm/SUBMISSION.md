@@ -23,17 +23,17 @@ Branch ที่ส่ง: `midterm`
 
 - [x] B1 แก้ครบ 6 จุด + `B1_BUGS.md` กรอกครบ
 - [x] B2 ค้นหาทำงานครบ 4 checkpoint
-- [ ] B3 ปุ่ม "ทำเสร็จ" persist + รอด refresh (F5 แล้วยังอยู่)
+- [x] B3 ปุ่ม "ทำเสร็จ" persist + รอด refresh (F5 แล้วยังอยู่)
 - [ ] B4 `PriorityBadge` + ใช้ใน `RequestCard`
-- [ ] `npm run build` ผ่าน
-- [ ] `AI_USAGE.md` กรอกครบ
+- [x] `npm run build` ผ่าน
+- [x] `AI_USAGE.md` กรอกครบ
 - [ ] push branch `midterm` + ติด tag `midterm-submission-v1`
 
 ---
 
 ## งานที่ทำไม่เสร็จ / ติดปัญหา (ถ้ามี)
 
-เขียนตามจริง — การบอกตรง ๆ ว่าติดตรงไหนดีกว่าปล่อยว่าง และช่วยตอน oral
+ทำ B4 ไม่ทันเนื่องจากเวลาหมดก่อน
 
 ```
 (เขียนตรงนี้ หรือเว้นว่างถ้าทำครบ)

@@ -51,9 +51,15 @@ function DashboardPage() {
     completed: requests.filter((request) => request.status === 'completed').length,
   }), [requests]);
 
-  const filteredRequests = statusFilter === 'all'
-    ? requests
-    : requests.filter((request) => request.status === statusFilter);
+  const filteredRequests = requests.filter((request) => {
+    const matchStatus = statusFilter === 'all' || request.status === statusFilter;
+    const searchLower = searchText.toLowerCase();
+    const matchSearch = 
+      request.requestType.toLowerCase().includes(searchLower) || 
+      request.location.toLowerCase().includes(searchLower);
+
+    return matchStatus && matchSearch;
+  });
 
   function handleRetry() {
     if (scenario) setSearchParams({});

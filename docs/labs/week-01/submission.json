@@ -2,15 +2,15 @@
   "week": "week-01",
   "title": "Developer Environment & GitHub Repository Setup",
   "status": "submitted",
-  "sourceOrigin": "course-starter",
-  "originalRepoUrl": "",
-  "originalCommit": "",
-  "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/1",
+  "sourceOrigin": "migrated-repository",
+  "originalRepoUrl": "https://github.com/poleon48/engse203-student-labs-68543210034",
+  "originalCommit": "02275b16a08e54c840d171c903bde50605c0d97b",
+  "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/3",
   "submissionTag": "lab-01-submission-v1",
   "testStatus": "pass",
-  "notes": "",
+  "notes": "ตรวจอัตโนมัติผ่าน; ดูรายละเอียดใน Evidence; originalCommit อ้าง snapshot ที่นำเข้าใน Student Repository (ยังไม่ยืนยัน URL repo ภายนอกเดิม)",
   "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-01/",
-  "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/lab/week-01/labs/week-01/source",
-  "hasPublish": false,
-  "sourceEntries": 5
+  "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-01/source",
+  "hasPublish": true,
+  "sourceEntries": 4
 }

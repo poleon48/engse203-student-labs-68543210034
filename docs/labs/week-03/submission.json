@@ -2,15 +2,15 @@
   "week": "week-03",
   "title": "Responsive Web UI & Form Interaction",
   "status": "submitted",
-  "sourceOrigin": "course-starter",
-  "originalRepoUrl": "",
-  "originalCommit": "",
+  "sourceOrigin": "migrated-repository",
+  "originalRepoUrl": "https://github.com/poleon48/engse203-student-labs-68543210034",
+  "originalCommit": "02275b16a08e54c840d171c903bde50605c0d97b",
   "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/1",
   "submissionTag": "lab-03-submission-v1",
-  "testStatus": "not-tested",
-  "notes": "",
+  "testStatus": "pass",
+  "notes": "ตรวจอัตโนมัติผ่าน; ดูรายละเอียดใน Evidence; originalCommit อ้าง snapshot ที่นำเข้าใน Student Repository (ยังไม่ยืนยัน URL repo ภายนอกเดิม)",
   "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-03/",
-  "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/lab/week-03/labs/week-03/source",
+  "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-03/source",
   "hasPublish": true,
-  "sourceEntries": 9
+  "sourceEntries": 8
 }

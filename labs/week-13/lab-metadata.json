@@ -1,0 +1,12 @@
+{
+  "week": "week-13",
+  "title": "Quality, Authentication & Security",
+  "status": "ready",
+  "sourceOrigin": "student-created",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "",
+  "submissionTag": "lab-13-submission-v1",
+  "testStatus": "pass",
+  "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment"
+}

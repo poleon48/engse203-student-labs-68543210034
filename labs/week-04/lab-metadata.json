@@ -1,12 +1,12 @@
 {
   "week": "week-04",
-  "title": "React Components and State",
-  "status": "submitted",
-  "sourceOrigin": "course-starter",
+  "title": "React Campus Service Request",
+  "status": "ready",
+  "sourceOrigin": "student-created",
   "originalRepoUrl": "",
   "originalCommit": "",
-  "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/1",
-  "submissionTag": "lab-04-submission-v1",
+  "pullRequestUrl": "",
+  "submissionTag": "lab-04-submission-v2",
   "testStatus": "pass",
-  "notes": ""
+  "notes": "ตรวจอัตโนมัติผ่าน; ดูรายละเอียดใน Evidence"
 }

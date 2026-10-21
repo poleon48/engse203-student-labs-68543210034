@@ -1,3 +1,7 @@
-# Week 01 Evidence
+# week-01 — Verification evidence
 
-ใส่ screenshots, test output หรือ reflection ที่ไม่ใช่ข้อมูลลับ แล้วอ้างชื่อไฟล์ใน `../README.md`
+[ผลตรวจอัตโนมัติรอบกู้ Portfolio](verification.txt)
+
+Project checker/build passed
+
+ผล pass ระบุขอบเขตการตรวจอัตโนมัติเท่านั้น ไม่แทน screenshot, การสาธิต หรือการประเมินความเข้าใจของผู้เรียน ไม่มีการสร้างหลักฐานว่าได้ทำกิจกรรมในชั้นเรียนหรือ deploy cloud

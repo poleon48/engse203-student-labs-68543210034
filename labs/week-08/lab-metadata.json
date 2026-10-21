@@ -1,0 +1,14 @@
+{
+  "week": "week-08",
+  "title": "Midterm Examination — Week 08",
+  "status": "submitted",
+  "sourceOrigin": "student-created",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/5",
+  "submissionTag": "midterm-submission-v1",
+  "testStatus": "pass",
+  "notes": "สอบกลางภาค ใช้งานเดิมจาก labs/midterm ไม่ใช่ LAB 08",
+  "assessmentType": "midterm",
+  "sourcePath": "labs/midterm"
+}

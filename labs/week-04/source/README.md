@@ -1,10 +1,5 @@
-# Pre-LAB 04 Starter — CP00
+# Campus Service Request — Week 04
 
-```bash
-nvm use
-npm install
-npm run dev
-```
+React components, props, controlled form และ state สำหรับเพิ่ม ลบ กรองคำร้อง พร้อม validation และข้อความแจ้งผล
 
-เริ่มจากแก้ subtitle ใน `src/App.jsx` ให้เห็น HMR แล้วกลับไปทำตาม `../README.md` ตั้งแต่ CP01
-
+ติดตั้ง npm install แล้ว npm run dev; ตรวจ npm run check และ npm run build

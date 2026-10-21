@@ -117,3 +117,20 @@ describe('ข้อมูลผิดรูปแบบ', () => {
 
 // 🏫 TODO W12-DEBUG (CP47): regression test ของ bug จาก BUG_REPORTS.md
 //   เขียน test ที่ "ทำซ้ำอาการ" ก่อน → ต้อง fail → แก้โค้ด → test ผ่าน
+
+describe('PUT และ DELETE regression', () => {
+ test('PUT บันทึกสถานะใหม่', async () => {
+  await request(app).put('/api/requests/REQ-001').send({status:'completed'}).expect(200);
+  const r=await request(app).get('/api/requests/REQ-001'); expect(r.body.status).toBe('completed');
+ });
+ test('PUT สถานะไม่ถูกต้อง', async () => { await request(app).put('/api/requests/REQ-001').send({status:'wrong'}).expect(400); });
+ test('PUT รหัสที่ไม่มีต้องตอบ 404', async () => { await request(app).put('/api/requests/REQ-999').send({status:'completed'}).expect(404); });
+ test('DELETE แล้ว GET ไม่พบ', async () => { await request(app).delete('/api/requests/REQ-003').expect(204); await request(app).get('/api/requests/REQ-003').expect(404); });
+ test('DELETE รหัสที่ไม่มี', async () => { await request(app).delete('/api/requests/REQ-999').expect(404); });
+ test('ลบรายการกลางแล้วสร้างใหม่ รหัสต้องไม่ชน', async () => {
+  await request(app).delete('/api/requests/REQ-002').expect(204);
+  const r=await request(app).post('/api/requests').send(valid); expect(r.status).toBe(201); expect(r.body.id).toBe('REQ-006');
+ });
+ test('รายการผู้ใช้', async () => {const r=await request(app).get('/api/users'); expect(r.status).toBe(200); expect(r.body).toHaveLength(4);});
+ test('คำร้องของผู้ใช้', async () => {const r=await request(app).get('/api/users/1/requests'); expect(r.status).toBe(200); expect(r.body).toHaveLength(2);});
+});

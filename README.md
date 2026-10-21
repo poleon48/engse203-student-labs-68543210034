@@ -1,59 +1,26 @@
-# ENGSE203 Student LAB Portfolio
+# ENGSE203 — LAB Portfolio
 
-Repository เดียวสำหรับเก็บผลงาน LAB ตลอดรายวิชา โดยใช้ branch รายสัปดาห์และ GitHub Pages Hub สำหรับตรวจผลลัพธ์
+ปฐมพร หลีจาง · 68543210034 · SEC2
 
-## เลือกเส้นทางเริ่มต้น
+[เปิด Portfolio](https://poleon48.github.io/engse203-student-labs-68543210034/)
 
-- **รุ่นถัดไป/ยังไม่เริ่ม LAB01:** อ่าน [START_HERE_BEFORE_LAB01.md](./START_HERE_BEFORE_LAB01.md)
-- **รุ่นปัจจุบันมี repo LAB01–03 แยกแล้ว:** อ่าน [START_HERE_LAB01_TO_LAB03.md](./START_HERE_LAB01_TO_LAB03.md)
-- **ทุกสัปดาห์:** ใช้ [WEEKLY_LAB_WORKFLOW.md](./WEEKLY_LAB_WORKFLOW.md)
+หน้า Portfolio รวม Week 01–13: **12 LAB + 1 Midterm** (Week 08 เป็นสอบกลางภาค) แต่ละงานมี Source, Evidence, ผลตรวจอัตโนมัติ และลิงก์ PR จริง
 
-```bash
-nvm use
-npm install
-npm run setup -- --student-id 6500000000 --name "ชื่อ นามสกุล" --section SEC1 --github github-user --mode new-course
-```
+## สร้างและตรวจหน้า Portfolio
 
-## Repository Contract
-
-| รายการ | รูปแบบ |
-|---|---|
-| Repository | `engse203-student-labs-<student-id>` |
-| Weekly branch | `lab/week-NN` |
-| Source | `labs/week-NN/source/` |
-| Evidence | `labs/week-NN/evidence/` |
-| Publish input | `labs/week-NN/publish/` |
-| Pages output | `docs/labs/week-NN/` |
-| Pages source | `main /docs` |
-| Submission | Pages Hub URL + Weekly Result URL + merged PR URL + submission tag |
-
-## คำสั่งหลัก
+ต้องใช้ Node.js 22.13 ขึ้นไป
 
 ```bash
-npm run import:source -- week-01 /path/to/old-lab01-repository
-npm run import:publish -- week-03 labs/week-03/source
 npm run build:pages
 npm run verify
 ```
 
-ถ้า build ซ้ำ ใช้ `--replace` ต่อท้ายคำสั่ง `import:publish` หลังตรวจ week และ path แล้ว
+Source อยู่ใน labs/week-NN/source ยกเว้นข้อสอบกลางภาคเดิมอยู่ labs/midterm รายละเอียดติดตั้งและทดสอบอยู่ใน README ของแต่ละสัปดาห์ หลักฐานรอบกู้งานอยู่ evidence/verification.txt
 
-ห้ามแก้ไฟล์ใน `docs/` ด้วยมือ เพราะ `npm run build:pages` จะสร้างใหม่จาก config, metadata และโฟลเดอร์ `publish/`
+Week 02–05 และ midterm เปิด static web ได้จาก Pages ส่วนงาน API/SQLite/full-stack แสดงรายงานผลตรวจและวิธีรัน โดยไม่ได้อ้างว่ามี API บน GitHub Pages หรือ deploy cloud สำเร็จแล้ว
 
-## Pages URL
+Week 05 ผ่าน 133/133, Week 06 ผ่าน 28/28 พร้อม persistence regression, Week 07 ผ่าน 36/36, Week 09 ผ่าน 30/30, Week 10 ผ่านภาคบังคับ 28/28, Week 11 ผ่าน 41/41, Week 12 ผ่านภาคบังคับ 20/20 และ Week 13 ผ่านภาคบังคับ 23/23 ดูผล Challenge ที่ยังไม่ผ่านใน evidence
 
-```text
-https://<github-username>.github.io/engse203-student-labs-<student-id>/
-```
+ห้ามแก้ docs ด้วยมือ ให้แก้ source/publish/metadata แล้วรัน build:pages อีกครั้ง CI ตรวจ Week 12–13 และตรวจว่า docs สร้างซ้ำได้
 
-## LAB ที่เตรียมไว้
-
-Template รุ่นนี้มี workspace LAB01–04 และ Pages Hub จะสร้างการ์ดจากทุก `labs/week-NN/` อัตโนมัติ
-
-## เพิ่ม LAB ในอนาคต
-
-```bash
-npm run add:lab -- week-05 "React Routing and Data"
-```
-
-จากนั้นใช้ workflow เดิมกับ `lab/week-05` และ `labs/week-05/`
+ดู [AI_USAGE.md](AI_USAGE.md) สำหรับแหล่งโค้ดเดิมและการใช้ AI ในรอบนี้ และ [WEEKLY_LAB_WORKFLOW.md](WEEKLY_LAB_WORKFLOW.md) สำหรับ workflow ส่งงาน

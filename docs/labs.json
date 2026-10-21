@@ -50,7 +50,7 @@
   {
     "week": "week-04",
     "title": "React Campus Service Request",
-    "status": "ready",
+    "status": "submitted",
     "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -66,7 +66,7 @@
   {
     "week": "week-05",
     "title": "React Routing, Data Fetching & Front-end Mini App",
-    "status": "ready",
+    "status": "submitted",
     "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -82,7 +82,7 @@
   {
     "week": "week-06",
     "title": "Node.js / Express API Foundation",
-    "status": "ready",
+    "status": "submitted",
     "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -98,7 +98,7 @@
   {
     "week": "week-07",
     "title": "RESTful API, Validation & Error Handling",
-    "status": "ready",
+    "status": "submitted",
     "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -132,7 +132,7 @@
   {
     "week": "week-09",
     "title": "Relational Database & SQL (SQLite)",
-    "status": "ready",
+    "status": "submitted",
     "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -148,7 +148,7 @@
   {
     "week": "week-10",
     "title": "Node.js Database Integration (node:sqlite)",
-    "status": "ready",
+    "status": "submitted",
     "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -164,7 +164,7 @@
   {
     "week": "week-11",
     "title": "Production & Deployment (Full-Stack Campus Service)",
-    "status": "ready",
+    "status": "submitted",
     "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -180,7 +180,7 @@
   {
     "week": "week-12",
     "title": "Software Testing & Debugging",
-    "status": "ready",
+    "status": "submitted",
     "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -196,7 +196,7 @@
   {
     "week": "week-13",
     "title": "Quality, Authentication & Security",
-    "status": "ready",
+    "status": "submitted",
     "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",

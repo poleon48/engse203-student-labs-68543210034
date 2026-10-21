@@ -61,8 +61,15 @@ export async function listLabs() {
 
 export async function meaningfulEntries(directory) {
   if (!(await exists(directory))) return [];
-  const entries = await fs.readdir(directory);
-  return entries.filter((entry) => !PLACEHOLDER_FILES.has(entry));
+  const localOnly = new Set(['node_modules', 'dist', '.git', '.env', '.env.local', '.env.production', '.env.development', '.DS_Store', 'Thumbs.db']);
+  const entries = await fs.readdir(directory, { withFileTypes: true });
+  const meaningful = [];
+  for (const entry of entries) {
+    if (PLACEHOLDER_FILES.has(entry.name) || localOnly.has(entry.name)) continue;
+    if (entry.isDirectory() && (await meaningfulEntries(path.join(directory, entry.name))).length === 0) continue;
+    meaningful.push(entry.name);
+  }
+  return meaningful;
 }
 
 export function isInsideRoot(target) {

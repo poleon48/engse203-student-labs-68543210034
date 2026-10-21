@@ -29,7 +29,7 @@
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-02/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-02/source",
     "hasPublish": true,
-    "sourceEntries": 11
+    "sourceEntries": 10
   },
   {
     "week": "week-03",
@@ -45,7 +45,7 @@
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-03/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-03/source",
     "hasPublish": true,
-    "sourceEntries": 8
+    "sourceEntries": 7
   },
   {
     "week": "week-04",
@@ -61,7 +61,7 @@
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-04/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-04/source",
     "hasPublish": true,
-    "sourceEntries": 11
+    "sourceEntries": 10
   },
   {
     "week": "week-05",
@@ -77,7 +77,7 @@
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-05/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-05/source",
     "hasPublish": true,
-    "sourceEntries": 11
+    "sourceEntries": 10
   },
   {
     "week": "week-06",
@@ -175,7 +175,7 @@
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-11/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-11/source",
     "hasPublish": true,
-    "sourceEntries": 14
+    "sourceEntries": 13
   },
   {
     "week": "week-12",
@@ -191,7 +191,7 @@
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-12/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-12/source",
     "hasPublish": true,
-    "sourceEntries": 18
+    "sourceEntries": 17
   },
   {
     "week": "week-13",
@@ -207,6 +207,6 @@
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-13/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-13/source",
     "hasPublish": true,
-    "sourceEntries": 16
+    "sourceEntries": 15
   }
 ]

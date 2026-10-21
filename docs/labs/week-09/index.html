@@ -1,46 +1,9 @@
-<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Relational Database &amp; SQL (SQLite)</title><style>body{font-family:Tahoma,Arial,sans-serif;background:#eaf1f7;color:#10253d;margin:0}main{max-width:980px;margin:28px auto;padding:28px;background:white;border-radius:14px}a{color:#075ea8}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f2f6fa;padding:18px;line-height:1.6}nav{display:flex;gap:18px;flex-wrap:wrap}.notice{padding:16px;background:#fff8e6;border-left:4px solid #e5a500}</style></head><body><main><a href="../../index.html">← LAB Portfolio</a><h1>week-09 — Relational Database &amp; SQL (SQLite)</h1><p class="notice">ตรวจอัตโนมัติผ่าน (30/30); ดูรายละเอียดใน Evidence</p><nav><a href="https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-09/source">Source</a><a href="https://github.com/poleon48/engse203-student-labs-68543210034/blob/main/labs/week-09/evidence/verification.txt">Verification evidence</a><a href="https://github.com/poleon48/engse203-student-labs-68543210034/blob/main/labs/week-09/README.md">วิธีรันและทดสอบ</a></nav><h2>ผลตรวจอัตโนมัติ</h2><pre>$ node check-week09.mjs
-
-✅ FILE มีไฟล์ campus.db
-✅ FILE มีไฟล์ schema.sql
-✅ CP19 มีตาราง users
-✅ CP19 มีตาราง requests
-✅ CP19 users มีคอลัมน์ id, name, department
-✅ CP19 requests มีคอลัมน์ครบตามที่ออกแบบ
-✅ CP18 ทั้งสองตารางมี Primary Key
-✅ CP18 requests มี Foreign Key ชี้ไป users
-✅ CP19 requests มีคอลัมน์ NOT NULL อย่างน้อย 5 คอลัมน์
-✅ CP19 มีข้อมูลใน users อย่างน้อย 4 คน
-✅ CP19 มีข้อมูลใน requests อย่างน้อย 5 รายการ
-✅ CP22 เพิ่มข้อมูลเองแล้ว — requests อย่างน้อย 8 รายการ
-✅ CP21 JOIN ระหว่าง requests กับ users ทำงานได้
-✅ CP21 ไม่มีคำร้องที่ชี้ไปผู้ใช้ที่ไม่มีจริง
-✅ CP25 Foreign Key ปฏิเสธ requester_id ที่ไม่มีจริง
-✅ CP25 ปฏิเสธ id ที่ซ้ำกับของเดิม
-✅ CP23 schema.sql มี CREATE TABLE ทั้งสองตาราง
-✅ CP23 schema.sql มี FOREIGN KEY หรือ REFERENCES
-✅ CP23 schema.sql รันซ้ำได้ (มี DROP TABLE IF EXISTS)
-✅ CP23 schema.sql มี INSERT ข้อมูลตั้งต้น
-✅ CP23 schema.sql รันจริงแล้วสร้างฐานข้อมูลได้
-✅ CP24 มีไฟล์ DATA_MODEL.md
-✅ CP24 อธิบายเหตุผลที่แยก users ออกจาก requests
-✅ CP22 มีไฟล์ queries.sql
-✅ CP22 queries.sql มีคำสั่ง SELECT อย่างน้อย 8 ข้อ
-✅ CP22 queries.sql มีการใช้ JOIN
-✅ CP22 queries.sql มีการใช้ WHERE และ ORDER BY
-✅ CHAL ⭐ ใช้ GROUP BY สรุปข้อมูล
-✅ CHAL ⭐ ใช้ฟังก์ชันรวม (COUNT/SUM/AVG)
-✅ CHAL ⭐ สร้าง INDEX เพื่อให้ค้นเร็วขึ้น
-
-──────────────────────────────────────────────────────────
-🏫 ในห้อง (CP17–CP21)   ผ่าน 11/11 รายการ
-🏠 ที่บ้าน (CP22–CP25)   ผ่าน 16/16 รายการ
-⭐ Challenge            ผ่าน 3/3 รายการ
-──────────────────────────────────────────────────────────
-ผ่าน 30/30 รายการ
-
-หมายเหตุ: checker ตรวจโครงสร้างและข้อมูลได้ แต่ตรวจไม่ได้ว่าคุณเข้าใจหรือไม่
-ผู้สอนจะสุ่มถามให้เขียน query สดจากฐานข้อมูลของคุณเอง
-
-
-Exit: 0
-</pre><h2>Build</h2><pre>This lab uses an evidence report rather than a static frontend build.</pre></main></body></html>
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>week-09 — Relational Database &amp; SQL (SQLite)</title>
+<style>body{margin:0;font-family:Tahoma,Arial,sans-serif;color:#10253d;background:#eef4f8}main{max-width:920px;margin:32px auto;padding:28px;background:#fff;border-radius:18px;box-shadow:0 12px 32px #0a27451c}a{color:#075ea8}h1{color:#092746}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{padding:16px;border:1px solid #c7d8e6;border-radius:12px;background:#f6f9fc}.pill{display:inline-block;padding:6px 10px;border-radius:99px;background:#e5f1fa;font-weight:700}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.actions a{padding:10px 14px;border-radius:8px;color:#fff;background:#1261a6;text-decoration:none}</style></head>
+<body><main><p><a href="../../index.html">← LAB Portfolio</a></p><span class="pill">Submitted</span>
+<h1>week-09 — Relational Database &amp; SQL (SQLite)</h1><p>LAB นี้ใช้ evidence report แทน web application</p>
+<div class="grid"><div class="card"><strong>Test Status</strong><p>pass</p></div><div class="card"><strong>Submission</strong><p>lab-09-submission-v1</p></div><div class="card"><strong>Original Commit</strong><p>ยังไม่ระบุ</p></div></div>
+<div class="actions"><a href="https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-09/source">View Source</a><a href="https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-09/evidence">View Evidence</a></div>
+</main></body></html>

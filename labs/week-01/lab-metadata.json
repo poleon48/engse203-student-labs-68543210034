@@ -8,5 +8,6 @@
   "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/3",
   "submissionTag": "lab-01-submission-v1",
   "testStatus": "pass",
-  "notes": "ตรวจอัตโนมัติผ่าน; ดูรายละเอียดใน Evidence; originalCommit อ้าง snapshot ที่นำเข้าใน Student Repository (ยังไม่ยืนยัน URL repo ภายนอกเดิม)"
+  "notes": "ตรวจอัตโนมัติผ่าน; ดูรายละเอียดใน Evidence; originalCommit อ้าง snapshot ที่นำเข้าใน Student Repository (ยังไม่ยืนยัน URL repo ภายนอกเดิม)",
+  "resultType": "evidence"
 }

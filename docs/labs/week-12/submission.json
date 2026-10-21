@@ -9,8 +9,9 @@
   "submissionTag": "lab-12-submission-v2",
   "testStatus": "pass",
   "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment",
+  "resultType": "cloud",
   "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-12/",
   "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-12/source",
-  "hasPublish": true,
+  "hasPublish": false,
   "sourceEntries": 17
 }

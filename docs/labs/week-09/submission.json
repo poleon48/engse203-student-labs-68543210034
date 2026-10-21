@@ -9,8 +9,9 @@
   "submissionTag": "lab-09-submission-v1",
   "testStatus": "pass",
   "notes": "ตรวจอัตโนมัติผ่าน (30/30); ดูรายละเอียดใน Evidence",
+  "resultType": "evidence",
   "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-09/",
   "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-09/source",
-  "hasPublish": true,
+  "hasPublish": false,
   "sourceEntries": 6
 }

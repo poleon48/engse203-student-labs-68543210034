@@ -8,5 +8,6 @@
   "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/8",
   "submissionTag": "lab-10-submission-v1",
   "testStatus": "pass",
-  "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment"
+  "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment",
+  "resultType": "evidence"
 }

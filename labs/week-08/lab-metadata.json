@@ -10,5 +10,6 @@
   "testStatus": "pass",
   "notes": "สอบกลางภาค ใช้งานเดิมจาก labs/midterm ไม่ใช่ LAB 08",
   "assessmentType": "midterm",
-  "sourcePath": "labs/midterm"
+  "sourcePath": "labs/midterm",
+  "showInPortfolio": false
 }

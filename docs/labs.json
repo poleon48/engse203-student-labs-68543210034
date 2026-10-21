@@ -10,9 +10,10 @@
     "submissionTag": "lab-01-submission-v1",
     "testStatus": "pass",
     "notes": "ตรวจอัตโนมัติผ่าน; ดูรายละเอียดใน Evidence; originalCommit อ้าง snapshot ที่นำเข้าใน Student Repository (ยังไม่ยืนยัน URL repo ภายนอกเดิม)",
+    "resultType": "evidence",
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-01/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-01/source",
-    "hasPublish": true,
+    "hasPublish": false,
     "sourceEntries": 4
   },
   {
@@ -90,9 +91,10 @@
     "submissionTag": "lab-06-submission-v1",
     "testStatus": "pass",
     "notes": "ตรวจอัตโนมัติผ่าน (28/28); ดูรายละเอียดใน Evidence",
+    "resultType": "evidence",
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-06/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-06/source",
-    "hasPublish": true,
+    "hasPublish": false,
     "sourceEntries": 8
   },
   {
@@ -106,28 +108,11 @@
     "submissionTag": "lab-07-submission-v1",
     "testStatus": "pass",
     "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment",
+    "resultType": "evidence",
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-07/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-07/source",
-    "hasPublish": true,
+    "hasPublish": false,
     "sourceEntries": 6
-  },
-  {
-    "week": "week-08",
-    "title": "Midterm Examination — Week 08",
-    "status": "submitted",
-    "sourceOrigin": "student-created",
-    "originalRepoUrl": "",
-    "originalCommit": "",
-    "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/5",
-    "submissionTag": "midterm-submission-v1",
-    "testStatus": "pass",
-    "notes": "สอบกลางภาค ใช้งานเดิมจาก labs/midterm ไม่ใช่ LAB 08",
-    "assessmentType": "midterm",
-    "sourcePath": "labs/midterm",
-    "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-08/",
-    "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/midterm",
-    "hasPublish": true,
-    "sourceEntries": 1
   },
   {
     "week": "week-09",
@@ -140,9 +125,10 @@
     "submissionTag": "lab-09-submission-v1",
     "testStatus": "pass",
     "notes": "ตรวจอัตโนมัติผ่าน (30/30); ดูรายละเอียดใน Evidence",
+    "resultType": "evidence",
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-09/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-09/source",
-    "hasPublish": true,
+    "hasPublish": false,
     "sourceEntries": 6
   },
   {
@@ -156,9 +142,10 @@
     "submissionTag": "lab-10-submission-v1",
     "testStatus": "pass",
     "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment",
+    "resultType": "evidence",
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-10/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-10/source",
-    "hasPublish": true,
+    "hasPublish": false,
     "sourceEntries": 5
   },
   {
@@ -172,9 +159,10 @@
     "submissionTag": "lab-11-submission-v1",
     "testStatus": "pass",
     "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment",
+    "resultType": "cloud",
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-11/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-11/source",
-    "hasPublish": true,
+    "hasPublish": false,
     "sourceEntries": 13
   },
   {
@@ -188,9 +176,10 @@
     "submissionTag": "lab-12-submission-v2",
     "testStatus": "pass",
     "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment",
+    "resultType": "cloud",
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-12/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-12/source",
-    "hasPublish": true,
+    "hasPublish": false,
     "sourceEntries": 17
   },
   {
@@ -204,9 +193,10 @@
     "submissionTag": "lab-13-submission-v1",
     "testStatus": "pass",
     "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment",
+    "resultType": "cloud",
     "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-13/",
     "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-13/source",
-    "hasPublish": true,
+    "hasPublish": false,
     "sourceEntries": 15
   }
 ]

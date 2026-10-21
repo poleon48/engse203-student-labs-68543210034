@@ -11,6 +11,7 @@
   "notes": "สอบกลางภาค ใช้งานเดิมจาก labs/midterm ไม่ใช่ LAB 08",
   "assessmentType": "midterm",
   "sourcePath": "labs/midterm",
+  "showInPortfolio": false,
   "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-08/",
   "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/midterm",
   "hasPublish": true,

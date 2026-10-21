@@ -1,73 +1,9 @@
-<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quality, Authentication &amp; Security</title><style>body{font-family:Tahoma,Arial,sans-serif;background:#eaf1f7;color:#10253d;margin:0}main{max-width:980px;margin:28px auto;padding:28px;background:white;border-radius:14px}a{color:#075ea8}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f2f6fa;padding:18px;line-height:1.6}nav{display:flex;gap:18px;flex-wrap:wrap}.notice{padding:16px;background:#fff8e6;border-left:4px solid #e5a500}</style></head><body><main><a href="../../index.html">← LAB Portfolio</a><h1>week-13 — Quality, Authentication &amp; Security</h1><p class="notice">ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment</p><nav><a href="https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-13/source">Source</a><a href="https://github.com/poleon48/engse203-student-labs-68543210034/blob/main/labs/week-13/evidence/verification.txt">Verification evidence</a><a href="https://github.com/poleon48/engse203-student-labs-68543210034/blob/main/labs/week-13/README.md">วิธีรันและทดสอบ</a></nav><h2>ผลตรวจอัตโนมัติ</h2><pre>$ node check-week13.mjs
-POST /api/requests 413 3.015 ms - 454
-POST /api/auth/login 200 38.958 ms - 375
-POST /api/auth/login 401 30.185 ms - 93
-POST /api/auth/login 401 0.258 ms - 93
-POST /api/auth/login 401 0.250 ms - 93
-PUT /api/requests/REQ-001 401 0.505 ms - 69
-PUT /api/requests/REQ-001 401 0.853 ms - 142
-PUT /api/requests/REQ-001 403 0.419 ms - 78
-PUT /api/requests/REQ-001 200 0.564 ms - 323
-DELETE /api/requests/REQ-003 204 0.334 ms - -
-GET /api/requests 200 0.308 ms - 1662
-POST /api/requests 201 0.498 ms - 260
-DELETE /api/requests/REQ-002 204 0.254 ms - -
-POST /api/requests 201 0.323 ms - 260
-GET /api/health 200 0.299 ms - 139
-POST /api/auth/login 401 33.041 ms - 93
-POST /api/auth/login 401 30.896 ms - 93
-POST /api/auth/login 401 32.084 ms - 93
-POST /api/auth/login 401 33.691 ms - 93
-POST /api/auth/login 401 30.685 ms - 93
-POST /api/auth/login 200 32.340 ms - 375
-
-✅ CP48 ชื่อผู้แจ้ง 100 ตัวผ่าน · 101 ตัวถูกปฏิเสธ
-✅ CP48 รายละเอียด 1000 ตัวผ่าน · 1001 ตัวถูกปฏิเสธ
-✅ CP48 สถานที่ยาวเกิน 100 ตัวถูกปฏิเสธ
-✅ CP49 hashPassword คืนรูปแบบ scrypt$salt$hash
-✅ CP49 รหัสผ่านเดียวกันได้ hash ต่างกัน (salt สุ่ม) และไม่มีรหัสผ่านจริงปน
-✅ CP49 verifyPassword: ถูก → true · ผิด → false
-✅ CP49 ตรวจ hash บัญชีเจ้าหน้าที่ใน schema.sql ได้
-✅ CP49 ตาราง users มีคอลัมน์ role และ password_hash
-✅ CP48 body ใหญ่เกิน 10kb → 413 เป็น JSON
-✅ CP50 POST /api/auth/login ถูกต้อง → 200 พร้อม token (3 ส่วน)
-✅ CP50 payload ของ token มี role=staff และ exp · ไม่มีรหัสผ่าน
-✅ CP50 รหัสผ่านผิด กับ อีเมลที่ไม่มี → 401 ข้อความเดียวกัน
-✅ CP50 ผู้แจ้งทั่วไป (ไม่มีรหัสผ่าน) เข้าสู่ระบบไม่ได้
-✅ CP51 PUT ไม่มี token → 401
-✅ CP51 PUT ด้วย token ปลอม (secret อื่น) → 401
-✅ CP51 PUT ด้วย token ที่ไม่ใช่เจ้าหน้าที่ → 403
-✅ CP51 เจ้าหน้าที่: PUT → 200 และ DELETE → 204
-✅ CP51 GET และ POST ยังไม่ต้องเข้าสู่ระบบ
-✅ CP51 ไม่ถอยหลัง · BUG #1 ของสัปดาห์ 12 ยังแก้อยู่ (ลบแล้วเพิ่มใหม่ → 201)
-✅ CP52 production ไม่ตั้ง JWT_SECRET → ระบบไม่ยอม start
-✅ CP52 production: error ไม่ส่ง stack trace ให้ผู้ใช้
-✅ CP52 .env.example มี JWT_SECRET ค่าว่าง และ .gitignore มี .env (ไม่ commit ค่าลับ)
-✅ CP52 npm test ใน api ผ่านทุกข้อ และมี test ของ 401 กับ 403
-[TODO] CHAL ⭐ มี security header (X-Content-Type-Options: nosniff)
-[TODO] CHAL ⭐ ผิดเกิน 5 ครั้ง → 429 (จำกัดการเดารหัสผ่าน) — ครั้งที่ 6 ได้ 200
-[TODO] CHAL ⭐ frontend แนบ Authorization: Bearer ทุกคำขอ (ทำต่อใน Term Project)
-✅ CHAL ⭐ render.yaml ให้ Render สร้าง JWT_SECRET (generateValue)
-
-──────────────────────────────────────────────────────────
-🏫 ในห้อง (CP48–CP52)   ผ่าน 23/23 รายการ
-⭐ Challenge            ผ่าน 1/4 รายการ
-──────────────────────────────────────────────────────────
-ผ่าน 24/27 รายการ
-
-หมายเหตุ: checker ตรวจพฤติกรรมด้านความปลอดภัยได้ แต่ตรวจไม่ได้ว่าเข้าใจเหตุผล
-ผู้สอนจะถามว่า 401 ต่างจาก 403 อย่างไร และทำไมต้อง hash รหัสผ่าน
-
-
-Exit: 0
-</pre><h2>Build</h2><pre>vite v8.1.5 building client environment for production...
-[2Ktransforming...✓ 42 modules transformed.
-rendering chunks...
-computing gzip size...
-dist/index.html                   0.51 kB │ gzip:  0.31 kB
-dist/assets/index-UUV2Pq6a.css    4.79 kB │ gzip:  1.72 kB
-dist/assets/index-ivkr5sIh.js   250.31 kB │ gzip: 79.19 kB
-
-✓ built in 298ms
-
-</pre></main></body></html>
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>week-13 — Quality, Authentication &amp; Security</title>
+<style>body{margin:0;font-family:Tahoma,Arial,sans-serif;color:#10253d;background:#eef4f8}main{max-width:920px;margin:32px auto;padding:28px;background:#fff;border-radius:18px;box-shadow:0 12px 32px #0a27451c}a{color:#075ea8}h1{color:#092746}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{padding:16px;border:1px solid #c7d8e6;border-radius:12px;background:#f6f9fc}.pill{display:inline-block;padding:6px 10px;border-radius:99px;background:#e5f1fa;font-weight:700}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.actions a{padding:10px 14px;border-radius:8px;color:#fff;background:#1261a6;text-decoration:none}</style></head>
+<body><main><p><a href="../../index.html">← LAB Portfolio</a></p><span class="pill">Submitted</span>
+<h1>week-13 — Quality, Authentication &amp; Security</h1><p>งาน Full-Stack — ดู Source และหลักฐานการทำงานด้านล่าง</p>
+<div class="grid"><div class="card"><strong>Test Status</strong><p>pass</p></div><div class="card"><strong>Submission</strong><p>lab-13-submission-v1</p></div><div class="card"><strong>Original Commit</strong><p>ยังไม่ระบุ</p></div></div>
+<div class="actions"><a href="https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-13/source">View Source</a><a href="https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-13/evidence">View Evidence</a></div>
+</main></body></html>

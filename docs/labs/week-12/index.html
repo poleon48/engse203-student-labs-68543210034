@@ -1,53 +1,9 @@
-<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Software Testing &amp; Debugging</title><style>body{font-family:Tahoma,Arial,sans-serif;background:#eaf1f7;color:#10253d;margin:0}main{max-width:980px;margin:28px auto;padding:28px;background:white;border-radius:14px}a{color:#075ea8}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f2f6fa;padding:18px;line-height:1.6}nav{display:flex;gap:18px;flex-wrap:wrap}.notice{padding:16px;background:#fff8e6;border-left:4px solid #e5a500}</style></head><body><main><a href="../../index.html">← LAB Portfolio</a><h1>week-12 — Software Testing &amp; Debugging</h1><p class="notice">ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment</p><nav><a href="https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-12/source">Source</a><a href="https://github.com/poleon48/engse203-student-labs-68543210034/blob/main/labs/week-12/evidence/verification.txt">Verification evidence</a><a href="https://github.com/poleon48/engse203-student-labs-68543210034/blob/main/labs/week-12/README.md">วิธีรันและทดสอบ</a></nav><h2>ผลตรวจอัตโนมัติ</h2><pre>$ node check-week12.mjs
-POST /api/auth/login 404 11.181 ms - 69
-DELETE /api/requests/REQ-002 204 0.586 ms - -
-POST /api/requests 201 0.821 ms - 260
-POST /api/auth/login 404 0.404 ms - 69
-PUT /api/requests/REQ-999 404 0.730 ms - 65
-GET /api/health 200 0.933 ms - 139
-
-✅ CP44 api ใช้ Vitest (script test = vitest)
-✅ CP44 test ใช้ฐานข้อมูลแยก (DB_FILE :memory: ใน vitest.config.js)
-✅ CP44 TEST_CASES.md มีกรณีทดสอบอย่างน้อย 8 ข้อ
-✅ CP44 มีกรณีค่าขอบ (boundary) ในตาราง
-✅ CP45 มี unit test อย่างน้อย 10 ข้อ (tests/unit)
-✅ CP45 BUG #0 · รายละเอียด 10 ตัวอักษรพอดี → ผ่าน
-✅ CP45 รายละเอียด 9 ตัวอักษร → ยังถูกปฏิเสธ (ไม่แก้เกิน)
-✅ CP46 มี integration test อย่างน้อย 12 ข้อ (tests/integration)
-✅ CP46 integration test ครอบคลุม PUT และ DELETE
-✅ CP46 ตั้งค่า coverage แล้ว (script coverage + @vitest/coverage-v8)
-✅ CP46 npm test ใน api ผ่านทุกข้อ
-✅ CP47 BUG #1 · ลบรายการกลางแล้วเพิ่มใหม่ → 201
-✅ CP47 BUG #3 · เปลี่ยนสถานะคำร้องที่ไม่มี → 404 (ไม่ใช่ 500)
-✅ CP47 ไม่ถอยหลัง · /api/health ยังตอบ 200 และต่อฐานข้อมูลได้
-✅ CP47 BUG #2 · Dashboard นับ &quot;กำลังดำเนินการ&quot; ถูก
-✅ CP47 frontend มี test และผ่านทุกข้อ
-✅ CP47 regression test BUG #1 (ลบแล้วเพิ่มใหม่)
-✅ CP47 regression test BUG #2 (นับ in-progress)
-✅ CP47 regression test BUG #3 (PUT คำร้องที่ไม่มี → 404)
-✅ CP47 DEBUG_LOG.md ระบุสาเหตุครบ 4 bug
-[TODO] CHAL ⭐ coverage ของ api ≥ 85% (statements) — ได้ 78.91%
-✅ CHAL ⭐ CI รัน npm test ทุกครั้งที่ push
-
-──────────────────────────────────────────────────────────
-🏫 ในห้อง (CP44–CP47)   ผ่าน 20/20 รายการ
-⭐ Challenge            ผ่าน 1/2 รายการ
-──────────────────────────────────────────────────────────
-ผ่าน 21/22 รายการ
-
-หมายเหตุ: checker ตรวจได้ว่า bug หายและมี test กัน แต่ตรวจไม่ได้ว่าเข้าใจสาเหตุ
-ผู้สอนจะถามให้เล่าว่าใช้เครื่องมือไหนหาเจอ และทำไมแก้ตรงนั้น
-
-
-Exit: 0
-</pre><h2>Build</h2><pre>vite v8.1.5 building client environment for production...
-[2Ktransforming...✓ 42 modules transformed.
-rendering chunks...
-computing gzip size...
-dist/index.html                   0.51 kB │ gzip:  0.31 kB
-dist/assets/index-UUV2Pq6a.css    4.79 kB │ gzip:  1.72 kB
-dist/assets/index-ivkr5sIh.js   250.31 kB │ gzip: 79.19 kB
-
-✓ built in 183ms
-
-</pre></main></body></html>
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>week-12 — Software Testing &amp; Debugging</title>
+<style>body{margin:0;font-family:Tahoma,Arial,sans-serif;color:#10253d;background:#eef4f8}main{max-width:920px;margin:32px auto;padding:28px;background:#fff;border-radius:18px;box-shadow:0 12px 32px #0a27451c}a{color:#075ea8}h1{color:#092746}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{padding:16px;border:1px solid #c7d8e6;border-radius:12px;background:#f6f9fc}.pill{display:inline-block;padding:6px 10px;border-radius:99px;background:#e5f1fa;font-weight:700}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.actions a{padding:10px 14px;border-radius:8px;color:#fff;background:#1261a6;text-decoration:none}</style></head>
+<body><main><p><a href="../../index.html">← LAB Portfolio</a></p><span class="pill">Submitted</span>
+<h1>week-12 — Software Testing &amp; Debugging</h1><p>งาน Full-Stack — ดู Source และหลักฐานการทำงานด้านล่าง</p>
+<div class="grid"><div class="card"><strong>Test Status</strong><p>pass</p></div><div class="card"><strong>Submission</strong><p>lab-12-submission-v2</p></div><div class="card"><strong>Original Commit</strong><p>ยังไม่ระบุ</p></div></div>
+<div class="actions"><a href="https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-12/source">View Source</a><a href="https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-12/evidence">View Evidence</a></div>
+</main></body></html>

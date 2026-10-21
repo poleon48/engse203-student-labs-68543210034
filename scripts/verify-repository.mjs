@@ -45,7 +45,8 @@ for (const week of labs) {
     }
     if (metadata.status === "submitted") {
       if (!validHttpUrl(metadata.pullRequestUrl)) errors.push(`${week}: submitted ต้องมี pullRequestUrl`);
-      if (!/^lab-\d{2}-submission-v\d+$/i.test(metadata.submissionTag)) errors.push(`${week}: submissionTag ใช้รูปแบบ lab-01-submission-v1`);
+      const tagPattern = metadata.assessmentType === 'midterm' ? /^midterm-submission-v\d+$/i : /^lab-\d{2}-submission-v\d+$/i;
+      if (!tagPattern.test(metadata.submissionTag)) errors.push(`${week}: submissionTag ไม่ตรงชนิดงาน`);
     }
   }
   pass.push(`${week} ${setupMode ? "setup structure/metadata/pages" : "structure/metadata/pages"}`);
@@ -55,7 +56,15 @@ const forbiddenNames = new Set([".git", "node_modules", ".env", ".env.local", ".
 async function scanForbidden(directory) {
   if (!(await exists(directory))) return;
   for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
-    if (forbiddenNames.has(entry.name)) errors.push(`พบไฟล์/โฟลเดอร์ที่ห้าม commit: ${path.relative(ROOT, path.join(directory, entry.name))}`);
+    if (forbiddenNames.has(entry.name)) {
+      const relative = path.relative(ROOT, path.join(directory, entry.name));
+      let ignored = false;
+      try {
+        execFileSync('git', ['check-ignore', '--quiet', '--', relative], { cwd: ROOT, stdio: 'ignore' });
+        ignored = true;
+      } catch { /* Unignored or tracked secrets/dependencies must fail verification. */ }
+      if (!ignored) errors.push(`พบไฟล์/โฟลเดอร์ที่ห้าม commit: ${relative}`);
+    }
     else if (entry.isDirectory()) await scanForbidden(path.join(directory, entry.name));
   }
 }

@@ -1,0 +1,16 @@
+$ node scripts/check-project.mjs
+
+
+Exit: 0
+
+
+FRONTEND BUILD
+vite v8.1.5 building client environment for production...
+[2Ktransforming...✓ 8 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                 1.62 kB │ gzip: 0.68 kB
+dist/assets/index-BTD81qDK.css  1.93 kB │ gzip: 0.87 kB
+dist/assets/index-B8JtRCA6.js   3.79 kB │ gzip: 1.76 kB
+
+✓ built in 68ms

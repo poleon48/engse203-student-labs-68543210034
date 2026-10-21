@@ -1,0 +1,9 @@
+$ node src/hello.js
+Hello Pathomporn Leejang (68543210034-3) | OS: win32 | Node: v24.19.0
+
+
+Exit: 0
+
+
+FRONTEND BUILD
+This lab uses an evidence report rather than a static frontend build.

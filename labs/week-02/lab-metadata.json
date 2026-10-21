@@ -2,11 +2,11 @@
   "week": "week-02",
   "title": "Modern JavaScript Learning Dashboard",
   "status": "submitted",
-  "sourceOrigin": "course-starter",
-  "originalRepoUrl": "",
-  "originalCommit": "",
-  "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/1",
+  "sourceOrigin": "migrated-repository",
+  "originalRepoUrl": "https://github.com/poleon48/engse203-student-labs-68543210034",
+  "originalCommit": "02275b16a08e54c840d171c903bde50605c0d97b",
+  "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/4",
   "submissionTag": "lab-02-submission-v1",
-  "testStatus": "not-tested",
-  "notes": ""
+  "testStatus": "pass",
+  "notes": "ตรวจอัตโนมัติผ่าน; ดูรายละเอียดใน Evidence; originalCommit อ้าง snapshot ที่นำเข้าใน Student Repository (ยังไม่ยืนยัน URL repo ภายนอกเดิม)"
 }

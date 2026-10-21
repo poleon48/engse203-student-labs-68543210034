@@ -48,7 +48,7 @@ export default function RequestForm({ onAddRequest }) {
     }
 
     const newReq = {
-      id: `REQ-${String(Date.now()).slice(-4)}`,
+      id: `REQ-${crypto.randomUUID()}`,
       requesterName: formData.requesterName.trim(),
       requestType: formData.requestType,
       location: formData.location.trim(),
@@ -73,7 +73,7 @@ export default function RequestForm({ onAddRequest }) {
     <section className="panel" aria-labelledby="form-title">
       <h2 id="form-title">สร้างคำร้องบริการ</h2>
       {successMsg && <p className="status-msg success" role="status">{successMsg}</p>}
-      
+
       <form onSubmit={handleSubmit} noValidate>
         <div className="form-group">
           <label htmlFor="requesterName">ชื่อผู้แจ้ง</label>
@@ -83,6 +83,7 @@ export default function RequestForm({ onAddRequest }) {
             name="requesterName"
             value={formData.requesterName}
             onChange={handleChange}
+            aria-invalid={Boolean(errors.requesterName)}
             className={errors.requesterName ? 'is-invalid' : ''}
             placeholder="ระบุชื่อ-นามสกุล"
           />
@@ -96,6 +97,7 @@ export default function RequestForm({ onAddRequest }) {
             name="requestType"
             value={formData.requestType}
             onChange={handleChange}
+            aria-invalid={Boolean(errors.requestType)}
             className={errors.requestType ? 'is-invalid' : ''}
           >
             <option value="">-- เลือกประเภทบริการ --</option>
@@ -115,6 +117,7 @@ export default function RequestForm({ onAddRequest }) {
             name="location"
             value={formData.location}
             onChange={handleChange}
+            aria-invalid={Boolean(errors.location)}
             className={errors.location ? 'is-invalid' : ''}
             placeholder="เช่น ห้องปฏิบัติการ 301"
           />
@@ -129,6 +132,7 @@ export default function RequestForm({ onAddRequest }) {
             rows="3"
             value={formData.details}
             onChange={handleChange}
+            aria-invalid={Boolean(errors.details)}
             className={errors.details ? 'is-invalid' : ''}
             placeholder="รายละเอียดเพิ่มเติม (อย่างน้อย 10 ตัวอักษร)"
           ></textarea>

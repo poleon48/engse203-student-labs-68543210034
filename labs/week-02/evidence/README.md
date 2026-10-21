@@ -1,3 +1,7 @@
-# Week 02 Evidence
+# week-02 — Verification evidence
 
-ควรมี screenshots ของ initial/loading/success/error/filter/mobile และผล `npm run check` / `npm run build`
+[ผลตรวจอัตโนมัติรอบกู้ Portfolio](verification.txt)
+
+Project checker/build passed
+
+ผล pass ระบุขอบเขตการตรวจอัตโนมัติเท่านั้น ไม่แทน screenshot, การสาธิต หรือการประเมินความเข้าใจของผู้เรียน ไม่มีการสร้างหลักฐานว่าได้ทำกิจกรรมในชั้นเรียนหรือ deploy cloud

@@ -1,0 +1,16 @@
+{
+  "week": "week-10",
+  "title": "Node.js Database Integration (node:sqlite)",
+  "status": "submitted",
+  "sourceOrigin": "student-created",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/8",
+  "submissionTag": "lab-10-submission-v1",
+  "testStatus": "pass",
+  "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment",
+  "pageUrl": "https://poleon48.github.io/engse203-student-labs-68543210034/labs/week-10/",
+  "sourceUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/tree/main/labs/week-10/source",
+  "hasPublish": true,
+  "sourceEntries": 5
+}

@@ -1,0 +1,29 @@
+name: Verify lab portfolio
+on: [push, pull_request]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        week: [week-12, week-13]
+    defaults:
+      run:
+        working-directory: labs/${{ matrix.week }}/source
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --prefix api
+      - run: npm ci --prefix frontend
+      - run: npm test
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm run build:pages
+      - run: npm run verify
+      - run: git diff --exit-code -- docs

@@ -1,0 +1,12 @@
+{
+  "week": "week-12",
+  "title": "Software Testing & Debugging",
+  "status": "submitted",
+  "sourceOrigin": "student-created",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "https://github.com/poleon48/engse203-student-labs-68543210034/pull/8",
+  "submissionTag": "lab-12-submission-v2",
+  "testStatus": "pass",
+  "notes": "ผ่านการตรวจภาคบังคับในเครื่อง; View Result เป็นรายงาน API/การทดสอบ ยังไม่ได้ยืนยัน cloud deployment"
+}

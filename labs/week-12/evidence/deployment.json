@@ -1,0 +1,12 @@
+{
+  "week": "12",
+  "url": "https://campus-service-68543210034-week12.onrender.com",
+  "serviceId": "srv-dbcg707avr4c73chnaj0",
+  "deployId": "dep-dbcg70vavr4c73chne1g",
+  "verifiedAt": "2026-10-21T18:26:16.944Z",
+  "deployStatus": "live",
+  "frontendStatus": 200,
+  "healthStatus": 200,
+  "apiStatus": 200,
+  "requestCount": 5
+}

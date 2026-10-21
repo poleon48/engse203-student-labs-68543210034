@@ -5,4 +5,4 @@
 3. เปิด Dashboard สร้างคำร้อง กรอง เปลี่ยนสถานะ และลบ
 4. ดูผลตรวจอัตโนมัติที่ ../evidence/verification.txt
 
-ยังไม่ได้ deploy cloud ในการกู้ครั้งนี้ ไม่มี URL cloud ที่ยืนยันแล้ว
+Deploy บน Render สำเร็จ: https://campus-service-68543210034-week11.onrender.com ดูผลตรวจจริงที่ ../evidence/deployment.json
